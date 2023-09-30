@@ -1,0 +1,348 @@
+.culture-section h2 {
+    font-weight: 800;
+    font-size: 50px;
+}
+#main-imgs {
+  max-width: 500px; /* Ensures the image doesn't exceed the container width */
+  max-height: 490px; /* Adjust the maximum height as needed */
+    height: auto; /* Maintain the image's aspect ratio */
+    display: block;
+  margin-bottom: 10px;
+}
+#hit {
+  margin-top: 20px;
+}
+
+.navbar {
+  margin-bottom: 0;
+  position: fixed;
+}
+
+#res {
+  float: right;
+  color: white;
+  font-size: 1.75em;
+  padding: 6px;
+  margin-left: 10px;
+  text-transform: capitalize;
+}
+.culture-section {
+  padding: 0%;
+  margin: 0%;
+}
+.culture-section h3 {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 14px 0;
+    font-family: 'proxima-nova', sans-serif;
+    text-transform: capitalize;
+}
+.culture-section p {
+    margin: 36px auto;
+    font-size: 18px;
+    width: 75%;
+}
+.btn-slider,
+.btn-slider2,
+.btn-slider3,
+.btn-slider4,
+.btn-slider5 {
+    background-color: #fff;
+    color: #d2282e;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    padding: 0px;
+    margin: 0px;
+    font-weight: 800;
+}
+.btn-slider:hover,
+.btn-slider2:hover,
+.btn-slider3:hover,
+.btn-slider4:hover,
+.btn-slider5:hover {
+    background-color: #dbdbdb;
+    color: #565299;
+}
+
+/* Popup CSS Below */
+.flexslider .slides img {
+  margin: 0 auto;
+  max-width: 100px;
+}
+.ct-sliderPop,
+.ct-sliderPop2,
+.ct-sliderPop3,
+.ct-sliderPop4,
+.ct-sliderPop5 {
+  
+  width:650px !important;
+  height:650px !important;
+}
+
+.ct-sliderPop > .inner > .cow-map-img,
+.ct-sliderPop2 > .inner > .cow-map-img,
+.ct-sliderPop3 > .inner > .cow-map-img,
+.ct-sliderPop4 > .inner > .cow-map-img,
+.ct-sliderPop5 > .inner > .cow-map-img {
+  margin-top: 75px;
+}
+
+.ct-sectional .col-lg-5.col-lg-offset-1 > img,
+.ct-sectional2 .col-lg-5.col-lg-offset-1 > img,
+.ct-sectional3 .col-lg-5.col-lg-offset-1 > img,
+.ct-sectional4 .col-lg-5.col-lg-offset-1 > img,
+.ct-sectional5 .col-lg-5.col-lg-offset-1 > img {
+  cursor: pointer;
+  border-radius: 50%;
+}
+.ct-sliderPop .inner,
+.ct-sliderPop2 .inner,
+.ct-sliderPop3 .inner,
+.ct-sliderPop4 .inner,
+.ct-sliderPop5 .inner {
+  color: #fff;
+  margin-top: 10px;
+}
+
+.map-white-border {
+  border-bottom: 1px solid #fff;
+  width: 30%;
+  margin: 50px auto;
+}
+.ct-sliderPop-container,
+.ct-sliderPop2-container,
+.ct-sliderPop3-container,
+.ct-sliderPop4-container,
+.ct-sliderPop5-container {
+  display: none;
+  left: 0px;
+  opacity: 0;
+  top: 0px;
+  z-index: 9998;
+}
+
+.ct-sliderPop-container.open,
+.ct-sliderPop2-container.open,
+.ct-sliderPop3-container.open,
+.ct-sliderPop4-container.open,
+.ct-sliderPop5-container.open {
+  animation-duration: 0.35s;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
+  display: block;
+}
+
+.ct-sliderPop-container, 
+.ct-sliderPop2-container,
+.ct-sliderPop3-container,
+.ct-sliderPop4-container,
+.ct-sliderPop5-container {
+  overflow:hidden;
+  display: inline-table;
+  max-width: 650px !important;
+  
+  left: 50%;
+  position: fixed !important; /* Required to override style inline style added by Flexslider */
+  text-align: center;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  z-index: 9997;
+}
+.ct-sliderPop-slide1, 
+.ct-sliderPop2-slide1,
+.ct-sliderPop3-slide1,
+.ct-sliderPop4-slide1,
+.ct-sliderPop5-slide1 {
+  background: #000000f1 none repeat scroll 0% 0%;
+}
+.ct-sliderPop-slide2, 
+.ct-sliderPop2-slide2,
+.ct-sliderPop3-slide2,
+.ct-sliderPop4-slide2,
+.ct-sliderPop5-slide2 {
+  background: #000000f1 none repeat scroll 0% 0%;
+}
+.ct-sliderPop-slide3, 
+.ct-sliderPop2-slide3,
+.ct-sliderPop3-slide3,
+.ct-sliderPop4-slide3,
+.ct-sliderPop5-slide3 {
+  background: #000000f1 none repeat scroll 0% 0%;
+}
+.ct-sliderPop-slide4, 
+.ct-sliderPop2-slide4,
+.ct-sliderPop3-slide4,
+.ct-sliderPop4-slide4,
+.ct-sliderPop5-slide4 {
+  background: #000000f1 none repeat scroll 0% 0%;
+}
+
+.sliderPop.flexslider:hover .flex-direction-nav .flex-prev .ct-sliderPop .inner .ct-sliderPop-close,
+.sliderPop2.flexslider:hover .flex-direction-nav .flex-prev .ct-sliderPop2 .inner .ct-sliderPop2-close,
+.sliderPop3.flexslider:hover .flex-direction-nav .flex-prev .ct-sliderPop3 .inner .ct-sliderPop3-close,
+.sliderPop4.flexslider:hover .flex-direction-nav .flex-prev .ct-sliderPop4 .inner .ct-sliderPop4-close,
+.sliderPop5.flexslider:hover .flex-direction-nav .flex-prev .ct-sliderPop5 .inner .ct-sliderPop5-close {
+  display: inline-block;
+  margin: -1% auto 30px;
+  transition: opacity 0.25s ease-in-out 0s;
+  width: 75px;
+}
+
+.ct-sliderPop h1,
+.ct-sliderPop2 h1,
+.ct-sliderPop3 h1,
+.ct-sliderPop4 h1,
+.ct-sliderPop5 h1 {
+  font-family: "nimbus-sans-condensed", sans-serif;
+  font-size: 75px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+.ct-sliderPop h1 span,
+.ct-sliderPop2 h1 span,
+.ct-sliderPop3 h1 span,
+.ct-sliderPop4 h1 span,
+.ct-sliderPop5 h1 span {
+  font-family: 'coquette', fantasy;
+  text-transform: capitalize;
+  line-height: 0.8;
+}
+
+.ct-sliderPop h2,
+.ct-sliderPop2 h2,
+.ct-sliderPop3 h2,
+.ct-sliderPop4 h2,
+.ct-sliderPop5 h2,
+.ct-sliderPop p,
+.ct-sliderPop2 p,
+.ct-sliderPop3 p,
+.ct-sliderPop4 p,
+.ct-sliderPop5 p {
+  font-family: "nimbus-sans-condensed", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1;
+}
+.ct-sliderPop .fa,
+.ct-sliderPop2 .fa,
+.ct-sliderPop3 .fa,
+.ct-sliderPop4 .fa,
+.ct-sliderPop5 .fa {
+    font-size: 84px;
+    margin-bottom: 10px;
+}
+.ct-sliderPop p,
+.ct-sliderPop2 p,
+.ct-sliderPop3 p,
+.ct-sliderPop4 p,
+.ct-sliderPop5 p {
+  font-size: 18px;
+  padding-bottom: 30px;
+  width: 70%;
+  line-height: 24px;
+  margin: 0 auto;
+}
+.ct-sliderPop-container .flex-direction-nav a,
+.ct-sliderPop2-container .flex-direction-nav a,
+.ct-sliderPop3-container .flex-direction-nav a,
+.ct-sliderPop4-container .flex-direction-nav a,
+.ct-sliderPop5-container .flex-direction-nav a {
+  overflow: visible;
+}
+.flex-direction-nav a,
+.flex-direction-nav a.flex-next::before,
+.flex-direction-nav a.flex-prev::before {
+  color: #fff !important;
+}
+.flexslider .slides img {
+  width: auto !important;
+}
+.sliderPop-close,
+.sliderPop2-close,
+.sliderPop3-close,
+.sliderPop4-close,
+.sliderPop5-close {
+  width: 60px;
+}
+
+
+/* =================================
+  # Media Queries 
+================================= */
+@media (max-width: 1200px){
+
+}
+@media (max-width: 991px){
+
+}
+@media (max-width: 767px){
+
+  .ct-sliderPop,
+  .ct-sliderPop2,
+  .ct-sliderPop3,
+  .ct-sliderPop4,
+  .ct-sliderPop5 {
+    height: 500px;
+    max-width: 600px !important;
+  }
+  .ct-sliderPop > .inner > .cow-map-img,
+  .ct-sliderPop2 > .inner > .cow-map-img,
+  .ct-sliderPop3 > .inner > .cow-map-img,
+  .ct-sliderPop4 > .inner > .cow-map-img,
+  .ct-sliderPop5 > .inner > .cow-map-img {
+    margin-top: 50px;
+  }
+  .ct-sliderPop-description span,
+  .ct-sliderPop2-description span,
+  .ct-sliderPop3-description span,
+  .ct-sliderPop4-description span,
+  .ct-sliderPop5-description span {
+    font-size: 50px;
+  }
+  .ct-sliderPop h2,
+  .ct-sliderPop2 h2,
+  .ct-sliderPop3 h2,
+  .ct-sliderPop4 h2,
+  .ct-sliderPop5 h2,
+  .ct-sliderPop-description,
+  .ct-sliderPop2-description,
+  .ct-sliderPop3-description,
+  .ct-sliderPop4-description,
+  .ct-sliderPop5-description {
+    font-size: 20px;
+  }
+  .ct-sliderPop h2,
+  .ct-sliderPop2 h2,
+  .ct-sliderPop3 h2,
+  .ct-sliderPop4 h2,
+  .ct-sliderPop5 h2 {
+    line-height: 0.2;
+  }
+  .ct-sliderPop-description,
+  .ct-sliderPop2-description,
+  .ct-sliderPop3-description,
+  .ct-sliderPop4-description,
+  .ct-sliderPop5-description {
+    padding-bottom: 0;
+  }
+  .ct-sliderPop .inner,
+  .ct-sliderPop2 .inner,
+  .ct-sliderPop3 .inner,
+  .ct-sliderPop4 .inner,
+  .ct-sliderPop5 .inner {
+    margin-top: 10px;
+  }
+  .ct-sliderPop-description .map-fontSize,
+  .ct-sliderPop2-description .map-fontSize,
+  .ct-sliderPop3-description .map-fontSize,
+  .ct-sliderPop4-description .map-fontSize,
+  .ct-sliderPop5-description .map-fontSize {
+    font-size: 80px;
+  }
+}
+
+@-webkit-keyframes fadeIn{0%{opacity:0}100%{opacity:1}}
+@keyframes fadeIn{0%{opacity:0}100%{opacity:1}}
