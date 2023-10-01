@@ -13,17 +13,13 @@ li {
 header {
     position: relative !important;
     padding: 0 2rem;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 30px 10%;
 }
 
 .navbar {
     position: fixed;
     width: 100% !important;
     height: 60px;
-    backdrop-filter: inverted(10px);
+    backdrop-filter: blur(10px);
     padding-top: 5px;
     padding-bottom: 5px;
     margin: 0 auto;
