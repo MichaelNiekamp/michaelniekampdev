@@ -1,0 +1,139 @@
+li {
+    list-style: none !important;
+}
+
+
+.navlinkers {
+    text-decoration: none !important;
+    color: white;
+    font-size: 2em;
+}
+
+a:hover {
+    color: lightblue;
+}
+
+header {
+    position: relative !important;
+    padding: 0 2rem;
+}
+
+.navbar {
+    width: 100% !important;
+    height: 60px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: fixed;
+    margin: 0 auto;
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    z-index: 10;
+}
+
+.navbar .logo a {
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 3em;
+}
+
+.navbar .toggle_btn {
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+    display: none;
+}
+
+.action_btn {
+    background-color: grey;
+    color: white;
+    padding: .5em 1em;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 2em;
+    font-weight: bold;
+    cursor: pointer;
+    transform: scale 0.2 ease;
+}
+
+.action_btn:hover {
+    scale: 1.05;
+    color: black;
+}
+
+.action_btn:active {
+    scale: 0.95;
+}
+
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2em;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgb(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+    height: 280px;
+}
+
+.dropdown_menu .action_btn {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.dropdown_menu li {
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ #hamb {
+    position: absolute;
+    top: -140px;
+    right: 70px;
+ }
+
+
+@media(max-width: 992px) {
+    .navbar .links,
+    .navbar .action_btn {
+        display: none;
+    }
+    .logo {
+        display: none;
+    }
+
+    .navbar .toggle_btn {
+        display: block;
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
+
+    .navbar {
+        background-color: rgb(0, 0, 0, 0);
+    }
+}
+
+@media(max-width: 576px) {
+    .dropdown_menu {
+        left: 2em;
+        width: unset;
+    }
+}

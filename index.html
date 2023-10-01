@@ -20,33 +20,49 @@
         <link href="./css/popup-slider.css" rel="stylesheet">
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/navbarStyle.css" rel="stylesheet" />
         
     </head>
     <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top" id="mainNav">
-            <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#page-top">Michael Niekamp</a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="true" aria-label="Toggle navigation">Menu <i class="fas fa-bars"></i></button>
-
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="nav navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#exp">Experience</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>
-                    </ul>
-
-                    <span><button class="btn btn-primary resume" type="button" id="res"><a href="./assets/Resume_onX_9-30-23.pdf" style="text-decoration: none; color:white;" target=”_blank”>Resume</a></button></span>
-                </div>
-            </div>
-        </nav>
+        
         <!-- Masthead-->
         <header class="masthead">
+            <div class="navbar">
+                <div class="logo"><a href="#" class="navlinkers">Michael Niekamp</a></div>
+                <ul class="links">
+                    <li><a href="#about" class="navlinkers">About</a></li>
+                    <li><a href="#exp" class="navlinkers">Experience</a></li>
+                    <li><a href="#projects" class="navlinkers">Projects</a></li>
+                    <li><a href="#signup" class="navlinkers">Contact</a></li>
+                </ul>
+                <a href="./assets/Resume_onX_9-30-23.pdf" class="action_btn navlinkers" target="_blank">Resume</a>
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars" style="font-size: 50px;" id="hamb"></i>
+                </div>
+            </div>
+            
+
+            <div class="dropdown_menu">
+                <li><a href="#about" class="navlinkers">About</a></li>
+                    <li><a href="#exp" class="navlinkers">Experience</a></li>
+                    <li><a href="#projects" class="navlinkers">Projects</a></li>
+                    <li><a href="#signup" class="navlinkers">Contact</a></li>
+                    <li><a href="./assets/Resume_onX_9-30-23.pdf" class="action_btn navlinkers" target="_blank">Resume</a></li>
+            </div>
+            <script>
+                const toggle_btn = document.querySelector('.toggle_btn')
+                const toggle_btnIcon = document.querySelector('.toggle_btn i')
+                const dropdownMenu = document.querySelector('.dropdown_menu')
+
+                toggle_btn.onclick = function () {
+                    dropdownMenu.classList.toggle('open')
+                }
+            </script>
+
             <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
                 <div class="d-flex justify-content-center">
                     <div class="text-center">
-                        <h1 class="mx-auto my-0 text-uppercase" style="font-size: 8em;">Michael Niekamp</h1>
+                        <h1 class="mx-auto my-0 text-uppercase">Michael Niekamp</h1>
                         <h2 class="text-white-50 mx-auto mt-2 mb-5" style="font-size: 2em;">Hi, I'm Michael.</h2>
                         <a class="btn btn-success" href="#about" style="font-size: 2em;">Learn More</a>
                     </div>
@@ -481,7 +497,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.5.0/jquery.flexslider-min.js"></script>
         <script src="./js/popup-slider.js"></script>
-        <script src="./js/scripts.js"></script>
+        
         
     </body>
 </html>
