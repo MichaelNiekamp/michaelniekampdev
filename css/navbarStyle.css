@@ -10,16 +10,13 @@ li {
     font-size: 2em;
 }
 
-a:hover {
-    color: black;
-}
-
-a:visited {
-    color: white;
-}
 header {
     position: relative !important;
     padding: 0 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
 }
 
 .navbar {
@@ -45,6 +42,7 @@ header {
 .navbar .links {
     display: flex;
     gap: 3em;
+    transition: all 0.3s ease 0s;
 }
 
 .navbar .toggle_btn {
