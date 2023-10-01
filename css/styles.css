@@ -11097,6 +11097,14 @@ body {
     line-height: 4rem;
   }
 }
+
+@media (min-width: 300px) {
+  .masthead h1, .masthead .h1 {
+    font-size: 4rem;
+    line-height: 7rem;
+  }
+}
+
 @media (min-width: 992px) {
   .masthead {
     height: 100vh;
