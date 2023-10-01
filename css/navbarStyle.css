@@ -14,6 +14,9 @@ a:hover {
     color: lightblue;
 }
 
+a:visited {
+    color: white;
+}
 header {
     position: relative !important;
     padding: 0 2rem;
