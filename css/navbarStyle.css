@@ -14,6 +14,11 @@ header {
     position: relative !important;
     padding: 0 2rem;
 }
+.links li a:hover {
+    text-transform:uppercase;
+    background-color: #2c3e50;
+    border: 1px solid #333;
+}
 
 .navbar {
     width: 100% !important;
