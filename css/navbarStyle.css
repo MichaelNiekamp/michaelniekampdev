@@ -16,10 +16,9 @@ header {
 }
 
 .navbar {
-    position: fixed;
     width: 100% !important;
-    height: 60px;
-    backdrop-filter: blur(10px);
+    height: 70px;
+    backdrop-filter: blur(9px);
     padding-top: 5px;
     padding-bottom: 5px;
     margin: 0 auto;
