@@ -22,12 +22,12 @@ header {
 
 .links li a:hover {
     border-bottom: 3px solid black;
-    color: black !important!;
+    color: black !important;
 }
 
 .links li a.active {
     border-bottom: 3px solid black;
-    color: black !important!;
+    color: black !important;
 }
 
 .navbar {
