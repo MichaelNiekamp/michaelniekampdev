@@ -18,11 +18,12 @@ header {
 .links li a {
     padding: 10px;
     margin-top: 10px;
+    color: grey !important;
 }
 
 .links li a:hover {
     border-bottom: 3px solid black;
-    color: black !important;
+    color: white !important;
 }
 
 .links li a.active {
